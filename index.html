@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Cafeteria La Dolce Vita</title>
+  </head>
+  <body>
+    <header class="header">
+      <section>
+        <a href="#" class="logo">
+          <img src="./img/logo.png" alt="logo" />
+        </a>
+
+        <nav class="navbar">
+          <a href="#home">Home</a>
+          <a href="#about">Sobre</a>
+          <a href="#menu">Menu</a>
+          <a href="#review">Avaliações</a>
+          <a href="#address">Endereço</a>
+        </nav>
+
+        <div class="icons">
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAACnUlEQVR4nO2ZT0uUURTGx00GTi0i0LYa5QcIpMWMmvgN2ikRBWLgd0hsobavdUmraFXy4l4IS12WtWnTLv9sjNBR/MXFA90O18vMeO7MO/I+MDAMvM9zHu577vkzpVKBAvkDcAN4DCwBm8AOUJPPNrABvAYeAX2lvAEYAZaBY+rHEfABqObBwE1ghfMjAwbaZeIB8Bs77AOTrTYxFwnoKzAPjAG3gR75DMpvC8BW5PnZVpl4dkYAn4DRBnjuAqttMcPp66RxCEwBXU3wdQHTwqExkTKxdU6467ViwF0FdgM5028T/f9i+nY6tDDh8Q9LvfGxbMXv1wmNKVORU50nAZ2KpYArdj7WmsmJOnPms9J6b9l2uCrsY9iEPKw3qrSOgF4LYtc7+fhiEnFc85vSfGhB6hpAH/Mm0cY1F5XmKwtS18X6GDOJNq45rjTXLUhdrfBxyyTauKZrbXz8siDVVbdsEm1cs6w0D1IYuWISbVzzqtLcvyiv1g8L0o0cJPuaBambsX0smEQb13yuNF+mKIhbJtHGNb8rzfsWpH2BFmXEJOKwnpsifdSA61bkbtuhp8FUTaPOyTeWAm7w0Zg2E/inMxPQuWMtkgWOvGrc9erB6q0Vvy80IOOnj12Lll4GNz3q7iXbRrq9U+DoazLZNbt8mAmchMNHoDuJERGfJYx14F6Dt5NObI0V4HI7zCBD0aJU50FpAMvyfVyKna4TMWSpT2YikDOpkKU20x9YTDSKE+BdHcvwLKkZMVRx245ABxDDgbtegSHh6A5c8a03I8H0ukWBm7El+bdlnvkD/JTfXsjq9Vrg+fyYOS+AS3K6MaS9zaxQmMkrKMzkFNR3m6X5Y6jFJ/O01EkgbKazTJxhpjNNqJzpjJwocNHwF3AT+DHDe1lmAAAAAElFTkSuQmCC"
+            alt="search--v2"
+          />
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAClElEQVR4nO2Zz4tNYRjHn0GRxJb5kfwYxo+SJhv/AJJY2akxjWEkaUrZWSmb2UhZWDAZZjRJQlYWw1JWNpRSMxjKDSmLkfno7X5vTrr33DvXc849b82nzubc+3y/z7fO+573fY/ZIgUDOAi8J52vwDOgD2izIgJ8YGGMFTIMMJNocrrK721AO3AC+KH/HbOiARxQmGlgf53/DirIS4sZYDnwRWG2WcxQHiOBIYsZymMlMGExA2xRkM+FnL2anLJ7LGaAOwpyymIGOKkg4xYzQI+CzC6Ok6IATNB6nnsEGWp1CuCtR5DtEpv9b7GFe9+U90UPsbAq/iTBrS4dNgCwSqvweWCjl+ikggy6CDYA0C/Pp+YFcEait91E6xAGuPueCNgp0Y9uoikA3XqkvgMrzQuNk7B4DHS7CdcAuCSv6+YNcE/iA+7iCYAl2sUG9po3wFmJ33IXTwDsk8+bTJZFwC4ZzLiLV19JXLAs0Dip7OM3ZeSxBvgJ/Aa6svCoGN1XkP6M9E9L/0kW+kmjczIazUj/hfSPZqGfNNpd64DPQXuHtEvACm/9alNjMApscNYeke5VT900wwcy7HPUXKZdaKDXS7ee6bAMbzhqHpbmKy/NRkx7Zfoug9lw2EuzEdOl+o7izS9gbW5BFOahc4h54EquIRTkvBq4ZjED7FGQ1xYzlKfLsOkJtFvM8Pd9ctxiBhhQkCmLGWB1YrlyGVgfpmaLEeAIMOc4DU+1MswhxyBzwLpWBRlVE+El2aHrUdp3FWA8pWYs/xTlpiqr1o7EvS7dK9WoKaXUfMur93+bqrxPOhttiiZqMidx3hUejU5dj3Vv0qsmr8/YldOVJOHx2exVY3mgwXpXj0y4wul9akPN1ITCP3VAko9hrlVKAAAAAElFTkSuQmCC"
+            alt="shopping-cart--v1"
+          />
+        </div>
+      </section>
+    </header>
+
+    <div class="home-container">
+      <section id="#home">
+        <div class="content">
+          <h3>CODE COM O MELHOR CAFÉ DA REGIÃO</H3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium magni molestiae facere nemo tempore assumenda nobis saepe non in, repudiandae quibusdam error magnam velit aspernatur quia. Ex aperiam ad veritatis.</p>
+            <a href="#" class="btn">Pegue o seu agora</a>
+          </div>
+      </section>
+    </div>
+
+   <section class="about" id="about">
+      <h2 class="title">Sobre <span>Nós</span></h2>
+      <div class="row"
+        <div class="container-image">
+          <img src="./img/about-img.jpg" alt="sobre-nos">
+        </div>
+        <div class="content">
+          <h3>O Que Faz Nosso Café Especial</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil excepturi saepe iusto. Corrupti nesciunt odio facere, amet at, nam eaque, numquam alias voluptatum recusandae dolorem praesentium eligendi sint molestias adipisci.</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore minima pariatur tenetur earum! Blanditiis odit quisquam, illum tempora aut praesentium optio tempore mollitia tenetur ab. Id nisi harum aliquam voluptatum.<p/>
+          <a href="#" class="btn">Saiba Mais</a>
+          </div>
